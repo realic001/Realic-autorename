@@ -6,7 +6,7 @@ from .queue import queue_handlers
 from .admin import admin_handlers
 
 def register_all_handlers(app):
-    start_handlers(app)        # ✅ Call start handler first
+    start_handlers(app)        
     rename_handlers(app)
     caption_handlers(app)
     thumb_handlers(app)
