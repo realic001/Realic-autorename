@@ -15,7 +15,7 @@ async def main():
     print("Bot started")
     register_all_handlers(app)
     if Config.WEB_SERVER:
-        from web.server import start_webserver
+        from web import start_webserver
         await start_webserver()
     await idle()
     await app.stop()
