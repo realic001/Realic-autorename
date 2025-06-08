@@ -21,5 +21,4 @@ async def main():
     await app.stop()
 
 if __name__ == "__main__":
-    from pyrogram import idle
     asyncio.run(main())
